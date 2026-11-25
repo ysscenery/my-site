@@ -1,0 +1,355 @@
+
+/* GENEL AYARLAR */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #0b1120;
+    color: #f1f5f9;
+    line-height: 1.7;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* NAVİGASYON MENÜSÜ */
+
+header {
+    width: 100%;
+    background-color: #0b1120;
+    border-bottom: 1px solid #1e293b;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar {
+    max-width: 1100px;
+    margin: auto;
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: bold;
+    color: #a78bfa;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.nav-links a {
+    color: #cbd5e1;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #a78bfa;
+}
+
+
+/* ANA SAYFA */
+
+.hero {
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 30px;
+    background: radial-gradient(
+        circle at 80% 40%,
+        #252052 0%,
+        #0b1120 55%
+    );
+}
+
+.hero-content {
+    max-width: 850px;
+    text-align: center;
+}
+
+.welcome {
+    color: #a78bfa;
+    letter-spacing: 4px;
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+.hero h1 {
+    font-size: clamp(36px, 6vw, 64px);
+    line-height: 1.2;
+    margin-bottom: 25px;
+}
+
+.hero h1 span {
+    color: #a78bfa;
+}
+
+.hero-description {
+    color: #94a3b8;
+    max-width: 650px;
+    margin: auto;
+    font-size: 17px;
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 35px;
+    flex-wrap: wrap;
+}
+
+.btn {
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.primary-btn {
+    background-color: #8b5cf6;
+    color: white;
+}
+
+.primary-btn:hover {
+    background-color: #7c3aed;
+    transform: translateY(-3px);
+}
+
+.secondary-btn {
+    border: 1px solid #64748b;
+    color: #e2e8f0;
+}
+
+.secondary-btn:hover {
+    border-color: #a78bfa;
+    color: #a78bfa;
+}
+
+
+/* GENEL BÖLÜM AYARLARI */
+
+.section {
+    max-width: 1100px;
+    margin: auto;
+    padding: 90px 30px;
+}
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.section-subtitle {
+    color: #a78bfa;
+    letter-spacing: 3px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.section-heading h2 {
+    font-size: 34px;
+    margin-top: 10px;
+}
+
+
+/* HAKKIMDA */
+
+.about-content {
+    max-width: 750px;
+    margin: auto;
+    text-align: center;
+    color: #94a3b8;
+    font-size: 16px;
+}
+
+.about-content p {
+    margin-bottom: 18px;
+}
+
+
+/* YETENEKLER */
+
+.skills-section {
+    max-width: 100%;
+    background-color: #111a2d;
+}
+
+.skills-section .section-heading,
+.skills-container {
+    max-width: 1040px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.skill-card {
+    background-color: #18243a;
+    border: 1px solid #273650;
+    padding: 25px;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.skill-card:hover {
+    transform: translateY(-5px);
+    border-color: #8b5cf6;
+}
+
+.skill-card h3 {
+    color: #a78bfa;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.skill-card p {
+    color: #94a3b8;
+    font-size: 14px;
+}
+
+
+/* PROJELER */
+
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 22px;
+}
+
+.project-card {
+    background-color: #111a2d;
+    border: 1px solid #273650;
+    border-radius: 12px;
+    padding: 30px;
+    transition: 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-6px);
+    border-color: #8b5cf6;
+}
+
+.project-number {
+    color: #a78bfa;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.project-card h3 {
+    font-size: 20px;
+    margin: 15px 0;
+}
+
+.project-card p {
+    color: #94a3b8;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.project-tag {
+    color: #c4b5fd;
+    font-size: 12px;
+    background-color: #252052;
+    padding: 6px 10px;
+    border-radius: 5px;
+}
+
+
+/* İLETİŞİM */
+
+.contact-section {
+    text-align: center;
+}
+
+.contact-section > p {
+    color: #94a3b8;
+    margin-bottom: 30px;
+}
+
+.contact-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.contact-links a {
+    color: #a78bfa;
+    border: 1px solid #8b5cf6;
+    padding: 10px 22px;
+    border-radius: 7px;
+    transition: 0.3s;
+}
+
+.contact-links a:hover {
+    background-color: #8b5cf6;
+    color: white;
+}
+
+
+/* ALT BİLGİ */
+
+footer {
+    text-align: center;
+    padding: 25px;
+    border-top: 1px solid #1e293b;
+    color: #64748b;
+    font-size: 13px;
+}
+
+
+/* MOBİL UYUMLULUK */
+
+@media (max-width: 650px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-links {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .hero {
+        min-height: 500px;
+        padding: 70px 20px;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+    }
+
+    .section {
+        padding: 65px 20px;
+    }
+
+    .section-heading h2 {
+        font-size: 28px;
+    }
+}
