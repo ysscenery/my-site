@@ -1,5 +1,7 @@
 
-/* GENEL AYARLAR */
+/* =================================
+   GENEL AYARLAR
+================================= */
 
 * {
     margin: 0;
@@ -21,15 +23,13 @@ a {
 }
 
 
-/* NAVİGASYON MENÜSÜ */
+/* =================================
+   NAVİGASYON MENÜSÜ
+================================= */
 
 header {
-    width: 100%;
     background-color: #0b1120;
     border-bottom: 1px solid #1e293b;
-    position: sticky;
-    top: 0;
-    z-index: 100;
 }
 
 .navbar {
@@ -41,10 +41,10 @@ header {
     align-items: center;
 }
 
-.logo {
-    font-size: 30px;
-    font-weight: bold;
-    color: #a78bfa;
+.logo img {
+    width: 190px;
+    height: auto;
+    display: block;
 }
 
 .nav-links {
@@ -54,17 +54,19 @@ header {
 }
 
 .nav-links a {
-    color: #cbd5e1;
+    color: #E9D5F5;
     font-size: 14px;
     transition: color 0.3s;
 }
 
 .nav-links a:hover {
-    color: #a78bfa;
+    color: #F9A8D4;
 }
 
 
-/* ANA SAYFA */
+/* =================================
+   ANA SAYFA
+================================= */
 
 .hero {
     min-height: 600px;
@@ -72,6 +74,7 @@ header {
     align-items: center;
     justify-content: center;
     padding: 100px 30px;
+
     background: radial-gradient(
         circle at 80% 40%,
         #252052 0%,
@@ -85,7 +88,7 @@ header {
 }
 
 .welcome {
-    color: #a78bfa;
+    color: #F9A8D4;
     letter-spacing: 4px;
     font-size: 13px;
     font-weight: bold;
@@ -99,11 +102,11 @@ header {
 }
 
 .hero h1 span {
-    color: #a78bfa;
+    color: #E879B9;
 }
 
 .hero-description {
-    color: #94a3b8;
+    color: #C4B5D0;
     max-width: 650px;
     margin: auto;
     font-size: 17px;
@@ -125,27 +128,33 @@ header {
 }
 
 .primary-btn {
-    background-color: #8b5cf6;
+    background: linear-gradient(
+        135deg,
+        #E879B9,
+        #9333EA
+    );
     color: white;
 }
 
 .primary-btn:hover {
-    background-color: #7c3aed;
     transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(232, 121, 185, 0.25);
 }
 
 .secondary-btn {
-    border: 1px solid #64748b;
-    color: #e2e8f0;
+    border: 1px solid #C084FC;
+    color: #F9A8D4;
 }
 
 .secondary-btn:hover {
-    border-color: #a78bfa;
-    color: #a78bfa;
+    background-color: #352342;
+    border-color: #E879B9;
 }
 
 
-/* GENEL BÖLÜM AYARLARI */
+/* =================================
+   GENEL BÖLÜM AYARLARI
+================================= */
 
 .section {
     max-width: 1100px;
@@ -159,7 +168,7 @@ header {
 }
 
 .section-subtitle {
-    color: #a78bfa;
+    color: #F9A8D4;
     letter-spacing: 3px;
     font-size: 12px;
     font-weight: bold;
@@ -168,16 +177,19 @@ header {
 .section-heading h2 {
     font-size: 34px;
     margin-top: 10px;
+    color: #F5EAF7;
 }
 
 
-/* HAKKIMDA */
+/* =================================
+   HAKKIMDA
+================================= */
 
 .about-content {
     max-width: 750px;
     margin: auto;
     text-align: center;
-    color: #94a3b8;
+    color: #C4B5D0;
     font-size: 16px;
 }
 
@@ -186,7 +198,9 @@ header {
 }
 
 
-/* YETENEKLER */
+/* =================================
+   YETENEKLER
+================================= */
 
 .skills-section {
     max-width: 100%;
@@ -202,7 +216,10 @@ header {
 
 .skills-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    grid-template-columns: repeat(
+        auto-fit,
+        minmax(220px, 1fr)
+    );
     gap: 20px;
 }
 
@@ -216,26 +233,31 @@ header {
 
 .skill-card:hover {
     transform: translateY(-5px);
-    border-color: #8b5cf6;
+    border-color: #E879B9;
 }
 
 .skill-card h3 {
-    color: #a78bfa;
+    color: #F9A8D4;
     font-size: 18px;
     margin-bottom: 10px;
 }
 
 .skill-card p {
-    color: #94a3b8;
+    color: #C4B5D0;
     font-size: 14px;
 }
 
 
-/* PROJELER */
+/* =================================
+   PROJELER
+================================= */
 
 .projects-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(
+        auto-fit,
+        minmax(250px, 1fr)
+    );
     gap: 22px;
 }
 
@@ -249,11 +271,11 @@ header {
 
 .project-card:hover {
     transform: translateY(-6px);
-    border-color: #8b5cf6;
+    border-color: #E879B9;
 }
 
 .project-number {
-    color: #a78bfa;
+    color: #E879B9;
     font-size: 14px;
     font-weight: bold;
 }
@@ -261,16 +283,17 @@ header {
 .project-card h3 {
     font-size: 20px;
     margin: 15px 0;
+    color: #F5EAF7;
 }
 
 .project-card p {
-    color: #94a3b8;
+    color: #C4B5D0;
     font-size: 14px;
     margin-bottom: 20px;
 }
 
 .project-tag {
-    color: #c4b5fd;
+    color: #F9A8D4;
     font-size: 12px;
     background-color: #252052;
     padding: 6px 10px;
@@ -278,14 +301,16 @@ header {
 }
 
 
-/* İLETİŞİM */
+/* =================================
+   İLETİŞİM
+================================= */
 
 .contact-section {
     text-align: center;
 }
 
 .contact-section > p {
-    color: #94a3b8;
+    color: #C4B5D0;
     margin-bottom: 30px;
 }
 
@@ -297,31 +322,34 @@ header {
 }
 
 .contact-links a {
-    color: #a78bfa;
-    border: 1px solid #8b5cf6;
+    color: #F9A8D4;
+    border: 1px solid #C084FC;
     padding: 10px 22px;
     border-radius: 7px;
     transition: 0.3s;
 }
 
 .contact-links a:hover {
-    background-color: #8b5cf6;
+    background-color: #9333EA;
     color: white;
 }
 
 
-/* ALT BİLGİ */
+/* =================================
+   ALT BİLGİ
+================================= */
 
 footer {
     text-align: center;
     padding: 25px;
     border-top: 1px solid #1e293b;
-    color: #64748b;
+    color: #B8A2C5;
     font-size: 13px;
 }
 
-
-/* MOBİL UYUMLULUK */
+/* =================================
+   MOBİL UYUMLULUK
+================================= */
 
 @media (max-width: 650px) {
 
